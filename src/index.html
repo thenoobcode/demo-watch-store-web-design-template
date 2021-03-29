@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watch & Company</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Caveat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/shine.css">
+        <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="./css/cards.css">
+        <link rel="stylesheet" href="./css/form.css">
+        <link rel="stylesheet" href="./css/contact.css">
+        <script type="text/javascript" src="./js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="fixed-bg">
+                <div class="caption">
+                    Soul-Mates might be difficult to find, but <u>Soul-Watches</u> ain't.
+                </div>
+            </div>
+            <nav class="menu" id="menu">
+                <a href="#" class="brand" onclick="menuClick(null, event)">Watches & Co.</a>
+                <button class="collapsible-btn">☰</button>
+                <ul class="collapsible">
+                    <li><a href="#" onclick="menuClick(null, event)">Home</a></li>
+                    <li><a href="#products" onclick="menuClick('products', event)">Products</a></li>
+                    <li><a href="#contact-us" onclick="menuClick('contact-us', event)">Contact</a></li>
+                    <li><a href="#explore" onclick="menuClick('explore', event)">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="remaining">
+                <button type="button" class="button shiny" onclick="menuClick('explore', event)">
+                    Explore
+                </button>
+            </section>
+
+            <div id="explore">
+                <h1 class="heading"><span>The history of Wrist Watches.</span></h1>
+                <p class="para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Fusce suscipit, tortor ut egestas dictum, neque quam auctor dui, 
+                    sit amet elementum neque ante eget tortor. Sed ornare lobortis sollicitudin. 
+                    Suspendisse sollicitudin ullamcorper sapien, a lacinia urna pretium id. Lorem ipsum dolor 
+                    sit amet, consectetur adipiscing elit. Duis at tristique tellus. Phasellus dignissim diam 
+                    et sagittis ultrices. Donec gravida urna id lacinia aliquet. Aenean mi justo, 
+                    hendrerit a faucibus fermentum, sodales vitae ante. Praesent vel leo condimentum, 
+                    molestie ex tristique, vestibulum tellus.
+                </p>
+                <p>
+                    Praesent in nunc vitae metus dapibus malesuada. Nam iaculis sagittis sapien non ullamcorper. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                    Vivamus fringilla elementum arcu, nec porta ligula rhoncus id. Aliquam a fermentum nisi, eget tempor purus. 
+                    Quisque et ornare lorem. Etiam pharetra, augue nec tempus semper, mi ex pulvinar felis, 
+                    a porttitor enim arcu et ipsum.
+                </p>
+                <p>
+                    Aliquam eu orci nec purus egestas facilisis. Maecenas vulputate nulla nec ex bibendum, 
+                    quis placerat nisi finibus. Maecenas rhoncus, enim a molestie dignissim, sapien sapien vehicula lectus, 
+                    pharetra lacinia ligula massa a eros. Aliquam erat volutpat. Nullam arcu odio, laoreet ac eros ut, 
+                    interdum aliquam nunc. Aliquam vitae lacinia dolor. Nam interdum, lorem et sollicitudin lacinia, 
+                    massa ligula ornare arcu, ac placerat dui turpis eu urna. In varius imperdiet libero iaculis maximus. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac tempor leo. Nulla enim arcu, 
+                    maximus id porta id, hendrerit quis sem.
+                </p>
+            </div>
+
+            <div class="cards" id="products">
+                <div class="card" style="background-image: url(./images/products/analog-watch.jpg);">
+                    <div class="overlay">
+                        <h3>Analog Watches</h3>
+                        <div><a class="more button shiny" href="#">More</a></div>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(./images/products/digital-watch.jpg);">
+                    <div class="overlay">
+                        <h3>Digital Watches</h3>
+                        <div><a class="more button shiny" href="#">More</a></div>                        
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(./images/products/pocket-watch.jpg);">
+                    <div class="overlay">
+                        <h3>Pocket Watches</h3>
+                        <div><a class="more button shiny" href="#">More</a></div> 
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(./images/products/smart-watch.jpg);">
+                    <div class="overlay">
+                        <h3>Smart Watches</h3>
+                        <div><a class="more button shiny" href="#">More</a></div> 
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(./images/products/smart-band.jpg);">
+                    <div class="overlay">
+                        <h3>Smart Bands</h3>
+                        <div><a class="more button shiny" href="#">More</a></div> 
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(./images/products/wall-clock.jpg);">
+                    <div class="overlay">
+                        <h3>Analog Clocks</h3>
+                        <div><a class="more button shiny" href="#">More</a></div>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(./images/products/digital-clock.jpg);">
+                    <div class="overlay">
+                        <h3>Digital Clocks</h3>
+                        <div><a class="more button shiny" href="#">More</a></div>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(./images/products/antique.jpg);">
+                    <div class="overlay">
+                        <h3>Antique Clocks</h3>
+                        <div><a class="more button shiny" href="#">More</a></div>
+                    </div>
+                </div>
+                <h1 class="heading"><span>Our Products</span></h1>
+            </div>
+        </main>
+
+        <footer id="contact-us" class="contact-us">
+            <div class="contact container">
+                <h1 class="heading"><span>Contact Us</span></h1>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+                <div class="contact-holder">
+                    <div class="contact-section">
+                        <div class="contact-item">
+                            <span><i class="marker"></i></span>
+                            <div>
+                                <label>Address</label>
+                                4631, Lorem Ipsum St.
+                                Avocadum, Incidintum.                
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>☎</span>
+                            <div>
+                                <label>Phone</label>
+                                (+91) 9876543210
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>✉</span>
+                            <div>
+                                <label>Email</label>
+                                lorem@ipsum.com
+                            </div>
+                        </div>
+                    </div>
+                    <form class="form">
+                        <h3 class="f-heading">Send Feedback:</h3>
+                        <div class="f-item">
+                            <label for="f-name">Name</label>
+                            <input id="f-name" type="text">
+                        </div>
+                        <div class="f-item">
+                            <label for="f-email">Email</label>
+                            <input id="f-email" type="email">
+                        </div>
+                        <div class="f-item">
+                            <label for="f-msg">Message</label>
+                            <textarea id="f-msg" rows="2"></textarea>
+                        </div>
+                        <div class="f-item">
+                            <button type="submit" class="button shiny">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

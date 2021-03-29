@@ -1,0 +1,92 @@
+.cards{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 4rem 0 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.cards h1{
+    grid-area: 2 / 2 / 2 / 3;
+    align-self: center;
+}
+
+.card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: gray;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 50%);
+    padding-top: 100%;
+}
+
+.card .overlay{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 10% 1rem;
+    height: 100%;
+    transition: top 0.5s;
+}
+
+.card:nth-child(odd) .overlay{
+    top: 100%;
+}
+
+.card:nth-child(even) .overlay{
+    top: -100%;
+}
+
+.card:hover .overlay{
+    top: 0;
+}
+
+.card .overlay h3{
+    margin: 0;
+    line-height: 1.2;
+}
+
+.card .overlay a, .card .overlay a:visited, .card .overlay a:hover{
+    color: inherit;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+}
+
+.card .overlay .more::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+@media screen and (min-width: 800px){
+    .card .overlay h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .cards{
+        grid-template: 0.25fr repeat(4, 1fr) / 1fr 1fr;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .cards h1{
+        grid-area: 1;
+        padding-top: 0;
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+}

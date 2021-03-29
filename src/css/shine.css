@@ -1,0 +1,46 @@
+.shiny-blue{
+    background-color: rgb(0, 48, 206);
+    color: #fff;
+}
+
+.shiny{
+    background-color: #0b0b0b;
+    color: #fff;
+}
+
+.something:active{
+    box-shadow: 1px 4px 10px 2px rgb(0,0,0,0.7);
+}
+
+.shiny-blue:hover{
+    animation: shiny-blue-effect 0.4s linear;
+}
+
+.shiny:hover{
+    /* background: linear-gradient(to right, rgb(0, 48, 206, 0) , #0030ce); */
+    animation: shiny-effect 0.35s linear;
+}
+
+@keyframes shiny-blue-effect{
+    0%{
+        background: linear-gradient(135deg,#fff , #0030ce);
+    }
+    50%{
+        background: linear-gradient(135deg, #0030ce , #fff, #0030ce);
+    }
+    100%{
+        background: linear-gradient(135deg, #0030ce , #fff);
+    }
+}
+
+@keyframes shiny-effect{
+    0%{
+        background: linear-gradient(135deg, #fff , #0b0b0b);
+    }
+    50%{
+        background: linear-gradient(135deg, #0b0b0b , #fff, #0b0b0b);
+    }
+    100%{
+        background: linear-gradient(135deg, #0b0b0b , #fff);
+    }
+}

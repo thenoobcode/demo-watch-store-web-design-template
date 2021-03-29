@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+html, body{
+    font-size: 17px;
+    margin: 0;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #fff;
+}
+
+button{    
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.para::first-letter{
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.heading{
+    display: flex;    
+    align-items: center;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'Caveat', 'Cursive';
+    font-weight: lighter;
+}
+
+.heading span{
+    background: #fff;
+    font-family: 'Caveat', 'Cursive';
+}
+
+.heading::after, .heading::before{
+    content: "";
+    border-bottom: 1px solid;
+    flex: 1 0 1.5rem;
+}
+
+.container{
+    padding: 3rem 15%;
+}
+
+main{
+    background: #fff;
+    margin-top: 75vh;
+    line-height: 1.8;
+    padding-top: 0 !important;
+}
+
+.fixed-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75vh;
+    width: 100%;
+    background-image: url(../images/watch.jpg);
+    background-color: rgb(114 113 111);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.fixed-bg .caption{
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Caveat';
+}
+
+.fixed-bg .caption *{
+    font-family: 'Caveat';
+}
+
+.remaining{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+.remaining button{
+    margin: auto;
+}
+
+.button{
+    padding: 1rem 1.5rem;
+    min-width: 200px;
+    box-shadow: 0px 1px 10px 2px rgb(0 0 0 / 70%);
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        padding: 3rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 3rem 1.5rem;
+    }
+}
