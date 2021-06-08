@@ -20,6 +20,7 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
+    font-variant: all-petite-caps;
 }
 
 .para::first-letter{

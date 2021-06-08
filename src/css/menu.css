@@ -25,7 +25,8 @@
 }
 
 .menu .brand{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-variant: all-petite-caps;
     font-family: 'Caveat', cursive;
 }
 
@@ -33,7 +34,7 @@
     padding: 0;
     margin: 0;
     display: flex;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .menu ul li{
@@ -42,6 +43,7 @@
 
 .menu li a{
     padding: 0.7rem 1rem;
+    font-variant: all-petite-caps;
     display: inline-block;
 }
 
